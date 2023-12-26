@@ -28,7 +28,7 @@ export default class Signup extends Component {
       if (this.state.password === this.state.repassword) {
         // Call signup API to register user
         const response = await fetch(
-          "https://password-backend-zwmu.onrender.com/register",
+          "https://password-reset-be-g7et.onrender.com/register",
           {
             method: "POST",
             credentials: "include",
@@ -68,7 +68,7 @@ export default class Signup extends Component {
   // Additional method for making a GET request
   fetchData = async () => {
     try {
-      const response = await fetch("https://password-backend-zwmu.onrender.com/user/signup", {
+      const response = await fetch("https://password-reset-be-g7et.onrender.com//signup", {
         method: "GET",
         credentials: "include",
         headers: { "Content-Type": "application/json" },

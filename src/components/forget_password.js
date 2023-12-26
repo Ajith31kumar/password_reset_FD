@@ -24,7 +24,7 @@ export default class ForgetPassword extends Component {
         if (this.state.email.length > 0 ) {
 
             // Get reset link in mail using api
-            const response = await fetch("https://password-backend-zwmu.onrender.com/user/send_reset_link", {
+            const response = await fetch("https://password-reset-be-g7et.onrender.com/forget-password", {
                 method: "POST",
                 credentials: "include",
                 headers: {

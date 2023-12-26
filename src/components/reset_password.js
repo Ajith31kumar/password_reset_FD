@@ -38,7 +38,7 @@ export default class ResetPassword extends Component {
             if (this.state.password === this.state.repassword) {
 
                 // Call the reset password API
-                const response = await fetch("https://password-backend-zwmu.onrender.com/forget-password", {
+                const response = await fetch("https://password-reset-be-g7et.onrender.com//forget-password", {
                     method: "POST",
                     credentials: "include",
                     headers: {

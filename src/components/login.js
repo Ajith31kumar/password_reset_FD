@@ -34,7 +34,7 @@ export default class Login extends Component {
         if (this.state.email.length > 0 && this.state.password.length > 0) {
 
             // Call the login API
-            const response = await fetch("http://localhost:4100/login", {
+            const response = await fetch("https://password-reset-be-g7et.onrender.com/login", {
                 method: "POST",
                 credentials: "include",
                 headers: { "Content-Type": "application/json" },
